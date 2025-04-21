@@ -1,0 +1,12 @@
+.footer-container{
+    height: 5%;
+    text-align: center;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    color: var(--main-bg-color-dark);
+    background-color: #fff;
+    border-top: 1px solid var(--main-bg-color-dark);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}

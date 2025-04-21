@@ -1,0 +1,3 @@
+.MuiCard-root {
+    transition: box-shadow 0.8s ease, transform 0.8s ease;
+}

@@ -1,0 +1,42 @@
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    max-width: 70%;
+}
+
+.doctors-container{
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    align-items: center;
+}
+.main-doctors-section{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.filter-section{
+    height: auto;
+    border-radius: 5px;
+    min-width: 20%;
+}
+
+.specialty-container {
+    border: 2px solid var(--main-bg-color-dark); 
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .specialty-container legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+    color: var(--main-bg-color-dark)
+  }
+  

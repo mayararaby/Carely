@@ -1,0 +1,27 @@
+/* UserBooking Styles */
+.user-booking-container {
+    height: 100%;
+}
+
+.user-booking-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-booking-card {
+    font-weight: bold;
+    color: var(--main-bg-color-dark);
+}
+
+.user-booking-card hr {
+    margin: 10px 0;
+}
+.user-empty-booking{
+    color: var(--main-bg-color-dark);
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin: 20px;
+
+}

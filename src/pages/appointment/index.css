@@ -1,0 +1,24 @@
+/* Appointment Page Styles */
+.appointment-container {
+    height: 100%;
+}
+
+.preview-Information {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.appointment-card-info {
+    font-weight: bold;
+    color: var(--main-bg-color-dark);
+}
+
+.confirm-button-container {
+    margin: 20px;
+}
+
+.appointment-main{
+    width: 100%;
+}

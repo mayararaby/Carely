@@ -1,0 +1,19 @@
+:root{
+  --main-bg-color-dark:#007cfe;
+  --main-bg-color-light:#E8F1FF;
+  --main-opcity-color:#007cfe63;
+  --disable-bg-color:#999;
+  --disable-color:#9e9e9e45;
+  --error-color:#e74c3c;
+  --success-color: #2ecc71;
+
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--main-bg-color-light);
+}
+html, body, #root {
+  height: 100%;
+}

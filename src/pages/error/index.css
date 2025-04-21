@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-home {
+    width: 25%;
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    object-fit: contain;
+}
+
+
+.main-container-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    color: var(--main-bg-color-dark);
+    gap: 15px;
+}
+
+.main-head-title {
+    font-family: "Pacifico", cursive;
+
+}
+
+.main-container-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0px;
+}
+
+@media (max-width: 768px) {
+    .image-home {
+        width: 100%;
+    }
+}
