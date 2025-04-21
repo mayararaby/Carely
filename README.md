@@ -3,7 +3,7 @@
 This project implements a responsive and accessible Doctor Booking UI for a healthcare platform. The task focuses purely on front-end development, using mock data and basic flow.
 
 ## Live Demo
-*Note: This project is frontend-only.*
+*Note: This project is frontend-only. https://carely-lyart.vercel.app/*
 
 ## Tech Stack
 - **React**: JavaScript library for building user interfaces.
@@ -71,6 +71,7 @@ The application will be available at [http://localhost:3000](http://localhost:30
 - Mock the data.
 - Write a clean README.
 - Optimize accessibility features in the app.
+- Unit testing environment
 
 ## Setup Instructions
 1. Clone the repository:
