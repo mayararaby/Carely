@@ -7,6 +7,8 @@ import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 import { useNavigate } from 'react-router-dom';
 import "./index.css"
+import { userLocation } from '../../helpers';
+import { CiLocationOn } from 'react-icons/ci';
 export const UserBooking = () => {
     const userAppointment = JSON.parse(localStorage.getItem("userAppointment")) || [];
     const navigate = useNavigate();
@@ -25,7 +27,7 @@ export const UserBooking = () => {
                                 </Typography>
                                 <hr />
 
-                                {userAppointment?.length?userAppointment.map((dateInfo, index) => (
+                                {userAppointment?.length ? userAppointment.map((dateInfo, index) => (
                                     <Stack
                                         key={index}
                                         direction="row"
@@ -43,8 +45,14 @@ export const UserBooking = () => {
                                                 {new Date(dateInfo?.date)?.toDateString()}
                                             </span>
                                         </Typography>
+                                        <Typography>
+                                            <CiLocationOn size={24} color={'#007cfe'} className={'cursor'}
+                                                onClick={() => (userLocation(`https://www.google.com/maps?q=${dateInfo.location.lat},${dateInfo.location.lng}`))}
+                                            />
+
+                                        </Typography>
                                     </Stack>
-                                )):<div className='user-empty-booking'>No Available Booking</div>}
+                                )) : <div className='user-empty-booking'>No Available Booking</div>}
                             </CardContent>
                         </Box>
                     </Card>

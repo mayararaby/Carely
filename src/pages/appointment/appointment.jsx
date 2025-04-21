@@ -19,7 +19,7 @@ export const Appointment = () => {
 
     const [BookDate, onBookDate] = useState();
     const { state } = useLocation();
-    const { name, specialty, bookedSlots } = state;
+    const { name, specialty, bookedSlots, location } = state;
     const doctorsInfo = useSelector((state) => state.doctors);
     const dispatch = useDispatch();
 
@@ -28,7 +28,8 @@ export const Appointment = () => {
         userAppointment.push({
             date: BookDate,
             doctor: name,
-            specialty: specialty
+            specialty: specialty,
+            location
         });
         localStorage.setItem("userAppointment", JSON.stringify(userAppointment));
 
