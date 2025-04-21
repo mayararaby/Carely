@@ -24,6 +24,7 @@ export const doctors = [
     availability: true,
     location: { lat: 30.0444, lng: 31.2357 },
     bookedSlots: getRandomBookedDates(),
+    rating:5
   },
   {
     id: 2,
@@ -33,6 +34,8 @@ export const doctors = [
     availability: false,
     location: { lat: 31.2001, lng: 29.9187 },
     bookedSlots: getRandomBookedDates(),
+    rating:5
+
   },
   {
     id: 3,
@@ -42,6 +45,8 @@ export const doctors = [
     availability: true,
     location: { lat: 30.0131, lng: 31.2089 },
     bookedSlots: getRandomBookedDates(),
+    rating:4
+
   },
   {
     id: 4,
@@ -51,6 +56,8 @@ export const doctors = [
     availability: false,
     location: { lat: 31.0364, lng: 31.3807 },
     bookedSlots: getRandomBookedDates(),
+    rating:4
+
   },
   {
     id: 5,
@@ -60,6 +67,8 @@ export const doctors = [
     availability: true,
     location: { lat: 30.7865, lng: 31.0004 },
     bookedSlots: getRandomBookedDates(),
+    rating:3
+
   },
   {
     id: 6,
@@ -69,6 +78,8 @@ export const doctors = [
     availability: true,
     location: { lat: 30.5877, lng: 31.502 },
     bookedSlots: getRandomBookedDates(),
+    rating:3
+
   },
   {
     id: 7,
@@ -78,6 +89,8 @@ export const doctors = [
     availability: false,
     location: { lat: 24.0889, lng: 32.8998 },
     bookedSlots: getRandomBookedDates(),
+    rating:1
+
   },
   {
     id: 8,
@@ -87,6 +100,8 @@ export const doctors = [
     availability: true,
     location: { lat: 30.5965, lng: 32.2715 },
     bookedSlots: getRandomBookedDates(),
+    rating:1
+
   },
   {
     id: 9,
@@ -96,6 +111,8 @@ export const doctors = [
     availability: true,
     location: { lat: 31.2653, lng: 32.3019 },
     bookedSlots: getRandomBookedDates(),
+    rating:5
+
   },
   {
     id: 10,
@@ -105,6 +122,8 @@ export const doctors = [
     availability: false,
     location: { lat: 30.0444, lng: 31.2357 },
     bookedSlots: getRandomBookedDates(),
+    rating:5
+
   },
   {
     id: 11,
@@ -114,6 +133,8 @@ export const doctors = [
     availability: true,
     location: { lat: 29.3084, lng: 30.8428 },
     bookedSlots: getRandomBookedDates(),
+    rating:3.5
+
   },
   {
     id: 12,
@@ -123,6 +144,8 @@ export const doctors = [
     availability: false,
     location: { lat: 30.0444, lng: 31.2357 },
     bookedSlots: getRandomBookedDates(),
+    rating:4.3
+
   },
   {
     id: 13,
@@ -132,6 +155,8 @@ export const doctors = [
     availability: true,
     location: { lat: 25.6872, lng: 32.6396 },
     bookedSlots: getRandomBookedDates(),
+    rating:4.4
+
   },
   {
     id: 14,
@@ -141,6 +166,8 @@ export const doctors = [
     availability: true,
     location: { lat: 28.1099, lng: 30.7503 },
     bookedSlots: getRandomBookedDates(),
+    rating:4.1
+
   },
   {
     id: 15,
@@ -150,6 +177,8 @@ export const doctors = [
     availability: false,
     location: { lat: 30.0444, lng: 31.2357 },
     bookedSlots: getRandomBookedDates(),
+    rating:1
+
   }
 ];
 

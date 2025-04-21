@@ -13,34 +13,37 @@ import { SlCalender } from "react-icons/sl";
 import { padgeColor } from '../../constants/colors';
 import { CiLocationOn } from "react-icons/ci";
 import { userLocation } from '../../helpers';
+import Rating from "react-rating";
+import star from "../../assets/star.png";
+import activeStar from "../../assets/star active.png";
 
 const StyledBadge = styled(Badge, {
     shouldForwardProp: (prop) => prop !== 'availability'
-  })(({ theme, availability }) => ({
+})(({ theme, availability }) => ({
     '& .MuiBadge-badge': {
-      backgroundColor: availability ? '#44b700' : 'gray',
-      color: availability ? '#44b700' : 'gray',
-      boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
-      '&::after': {
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        borderRadius: '50%',
-        content: '""',
-      },
+        backgroundColor: availability ? '#44b700' : 'gray',
+        color: availability ? '#44b700' : 'gray',
+        boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
+        '&::after': {
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            borderRadius: '50%',
+            content: '""',
+        },
     }
-  }));
-  
+}));
 
-export const CardInfo = ({ name, photo, specialty, availability, location, id, bookedSlots }) => {
+
+export const CardInfo = ({ name, photo, specialty, availability, location, id, bookedSlots, rating }) => {
     const navigate = useNavigate();
     const padgeCircleColor = padgeColor[Math.floor(Math.random() * padgeColor.length)]
-
+    console.log("rating -->", rating)
     const handleCardClick = () => {
         navigate(`/appointment/${id}`, {
-            state: { name, photo, specialty, availability, location, bookedSlots },
+            state: { name, photo, specialty, availability, location, bookedSlots, rating },
             replace: true
         });
     };
@@ -61,7 +64,20 @@ export const CardInfo = ({ name, photo, specialty, availability, location, id, b
                     </StyledBadge>
 
                 }
-                title={name}
+                title={<div>
+                    <div>
+                        {name}
+                    </div>
+                    <Rating
+                        className="rating-Field"
+                        value={rating}
+                        initialRating={rating}
+                        fractions={1}
+                        readonly={true}
+                        emptySymbol={<img src={star} alt="empty star" />}
+                        fullSymbol={<img src={activeStar} alt="filled star" />}
+                    />
+                </div>}
                 subheader={specialty}
 
             />
@@ -72,11 +88,12 @@ export const CardInfo = ({ name, photo, specialty, availability, location, id, b
                 alt={name}
                 sx={{ objectFit: 'contain' }}
             />
+
             <CardActions disableSpacing >
                 <IconButton aria-label="Book appointment" disabled={!availability} role="button">
                     <SlCalender onClick={handleCardClick} size={24} color={availability ? '#007cfe' : "gray"} className={availability && 'cursor'} />
                 </IconButton>
-                <IconButton aria-label="Book appointment"  role="button">
+                <IconButton aria-label="Book appointment" role="button">
                     <CiLocationOn size={24} color={'#007cfe'} className={'cursor'}
                         onClick={() => (userLocation(`https://www.google.com/maps?q=${location.lat},${location.lng}`))}
                     />

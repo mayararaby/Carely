@@ -1,3 +1,13 @@
 .MuiCard-root {
     transition: box-shadow 0.8s ease, transform 0.8s ease;
 }
+
+.rating-Field{
+    padding: 5px;
+    background-color: var(--main-bg-color-ligh);
+    border-radius: 20px;
+}
+
+.rating-Field img {
+    width: 20px;
+}
