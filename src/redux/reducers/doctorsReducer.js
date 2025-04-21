@@ -1,5 +1,5 @@
 import * as actionTypes from "../actions/actions"
-import { doctors } from "../../mocks/doctors"
+import { doctors } from "../../../__mocks__/doctors"
 
 const initialState = {
   doctors

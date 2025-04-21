@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { specialties } from '../../mocks/doctors';
+import { specialties } from '../../../__mocks__/doctors';
 import './index.css'
 export const SpecialtyCheckboxes = ({ selectedSpecialties, setSelectedSpecialties }) => {
     const handleChange = (event) => {
