@@ -2,10 +2,9 @@ import React, { useMemo, useState } from 'react';
 import { Pages } from '../../containers/pages';
 import { CardInfo } from '../../component/card/card';
 import "./index.css";
-import { SpecialtyCheckboxes } from '../../component/SpecialtyCheckboxes/specialtyCheckboxes';
 import { Avaiablility } from '../../component/avaiablility/avaiablility';
 import { useSelector } from 'react-redux';
-
+import { SpecialtyCheckboxes } from '../../component/specialtyCheckboxe/specialtyCheckboxes';
 export const Doctors = () => {
     const [selectedSpecialties, setSelectedSpecialties] = useState([]);
     const [selectedAvailability, setDoctorAvailibilty] = useState([]);
